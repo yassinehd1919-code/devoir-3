@@ -1,0 +1,28 @@
+<div class="container"> 
+     <div> 
+       <h2>Ajouter un Artist :</h2>              
+     </div> 
+          <form >  
+           
+              <div class="col-sm-2 col-md-2 col-lg-2"> 
+                <label >ID  artist</label> 
+                <input   type="text"  [(ngModel)]= "newArtist.idArtist" name="idArtist" class="form-control"> 
+               </div> 
+           
+              <div class="col-sm-4 col-md-4 col-lg-4" > 
+                <label >Nom artist</label> 
+                <input  type="text"[(ngModel)]= "newArtist.nomArtist"  name="nomArtist" class="form-control">
+                </div> 
+              <div class="col-sm-2 col-md-2 col-lg-2"> 
+                <label >nombre d'Album</label> 
+                <input type="number"   [(ngModel)]= "newArtist.nbrAlbum" name="nbrAlbum" class="form-control"> 
+              </div> 
+              <div class="col-sm-4 col-md-4 col-lg-4"> 
+                <label >Date de Debut</label> 
+                <input type="date"  [(ngModel)]= "newArtist.dateDebut" name="dateDebut" class="form-control"> 
+              </div> 
+              <div class="mt-2"> 
+        <button type="submit" (click)="addArtist()"class="btn btn-success">Ajouter</button> 
+            </div>    
+                </form> 
+</div> 

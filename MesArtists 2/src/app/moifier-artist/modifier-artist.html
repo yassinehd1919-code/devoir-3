@@ -1,0 +1,58 @@
+<div class="container">
+
+  <h2 class="mb-4">Modifier un artist</h2>
+
+  <form (ngSubmit)="modifierartist()">
+
+    <div class="mb-3">
+      <label class="form-label">ID artist</label>
+      <input
+        type="number"
+        class="form-control"
+        [(ngModel)]="id"
+        name="id"
+        readonly>
+    </div>
+
+    <div class="mb-3">
+      <label class="form-label">Nom du artist</label>
+      <input
+        type="text"
+        class="form-control"
+        [(ngModel)]="nom"
+        name="nom"
+        required>
+    </div>
+
+    <div class="mb-3">
+      <label class="form-label">nbr album</label>
+      <input
+        type="number"
+        class="form-control"
+        [(ngModel)]="nbrAlbum"
+        name="nbrAlbum"
+        required>
+    </div>
+
+    <div class="mb-3">
+      <label class="form-label">Date de debut</label>
+      <input
+        type="date"
+        class="form-control"
+        [(ngModel)]="dateDebut"
+        name="dateDebut"
+        required>
+    </div>
+
+    <button type="submit" class="btn btn-warning">Modifier</button>
+
+    <button
+      type="button"
+      class="btn btn-secondary ms-2"
+      routerLink="/artist">
+      Annuler
+    </button>
+
+  </form>
+
+</div>
